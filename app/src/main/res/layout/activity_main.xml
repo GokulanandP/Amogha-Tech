@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Farmer!!!"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/user_type_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFF"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="SELECT THE ITEM TO BE SOLD"
+        />
+
+    <RadioGroup
+        android:id="@+id/type_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="100dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingLeft="13dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="50"
+        android:background="@drawable/custom_radio_button_main"
+        android:checked="false"
+        android:gravity="center"
+        android:paddingStart="40dp"
+        android:text="FRUITS"
+        android:button="@android:color/transparent"
+        android:textSize="20dp"
+        android:paddingEnd="20dp"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:id="@+id/Fruit"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:paddingLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="50"
+            android:background="@drawable/custom_radio_button_main"
+            android:checked="false"
+            android:gravity="center"
+            android:paddingStart="40dp"
+            android:text="VEGETABLES"
+            android:paddingEnd="20dp"
+            android:button="@android:color/transparent"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:id="@+id/Vegetable"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:paddingLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="50"
+            android:background="@drawable/custom_radio_button_main"
+            android:checked="false"
+            android:gravity="center"
+            android:paddingStart="40dp"
+            android:paddingEnd="20dp"
+            android:text="CROPS"
+            android:button="@android:color/transparent"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:id="@+id/Crops"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit_type"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="#3C1A5B"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:textSize="20dp"
+        android:text="SUBMIT"
+        android:textStyle="bold"
+        android:layout_below="@+id/type_radio">
+    </Button>
+
+</RelativeLayout>
