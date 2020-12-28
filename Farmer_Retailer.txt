@@ -1,0 +1,34 @@
+Android Application for Farmers
+
+Two type of login:
+1) farmer 
+2) Retailer
+
+1) Farmer:
+page - 1 used to select the item type.
+page -2 used to display the retailers available and also can set the bid base price and time limit, completed bid.
+page - 3(when clicked on completed bid) will show the retailers details and a feedback box.
+
+2) Retailer:
+page - 1 used to select the item type.
+page - 2 showing the bids available and allowing to Selecting a bid will take them to next page. Can see the status of the bid he placed.
+page - 3 showing the current status of the auction and let the user to place the bid.
+
+Backend:
+DB tables:
+1)Retailer - [id , name, contact, address, location, rating]
+2) Auction - [status, max bid placed, id of the max bid placed, farmer id]
+
+
+APIS:
+Farmers:
+1) retailers available for each items. (get)
+2) completed bids - retailer data with max bid (get)
+3) feedback of the retailer (post) 
+
+
+Retailers:
+1) all the auctions happening. (get)
+2) placing a bid in the auction. (put)
+
+
